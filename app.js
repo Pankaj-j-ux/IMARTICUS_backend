@@ -5,8 +5,10 @@ require("dotenv").config();
 
 const app = express();
 const morgan = require("morgan");
+const cors = require("cors");
 
 // Middleware ....
+app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("tiny"));
