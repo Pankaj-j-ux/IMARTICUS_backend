@@ -19,7 +19,7 @@ app.route("/").get((req, res) => {
 });
 
 //IMPORT all routes here ....
-const course = require("./Routes/courseRoute");
+const course = require("./Routes/courseRoute.js");
 
 //router middleware ....
 app.use("/api/v1", course);

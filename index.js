@@ -1,7 +1,7 @@
 /** @format */
 
 const app = require("./app");
-const connectWithDb = require("./config/db");
+const connectWithDb = require("./config/db.js");
 require("dotenv").config();
 
 // const mongoose = require("mongoose");
