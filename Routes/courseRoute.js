@@ -7,7 +7,7 @@ const {
 } = require("../Controllers/courseController.js");
 const { isLogedIn } = require("../Middlewares/isLogedIn.js");
 
-router.route("/getallcourses").get(isLogedIn, getAllCourse);
-router.route("/getonecourse/:id").get(isLogedIn, getOneCourse);
+router.route("/getallcourses").get(getAllCourse);
+router.route("/getonecourse/:id").get( getOneCourse);
 
 module.exports = router;
